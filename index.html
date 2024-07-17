@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>signup&signin form </title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+      <div class="forms-container">
+        <div class="form-control signup-form">
+          <form action="#">
+            <h2>SIGN UP</h2>
+            <div class="social-container">
+              <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          <span>or use your email for registration</span>
+            <input type="text" placeholder="Username" required />
+            <input type="email" placeholder="Email" required />
+            <input type="password" placeholder="Password" required />
+            <button>SIGN UP</button>
+          </form>
+          
+        </div>
+        <div class="form-control signin-form">
+          <form action="#">
+            <h2>SIGN IN</h2>
+            <div class="social-container">
+              <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          <span>or use your account</span>
+            <input type="text" placeholder="Username" required />
+            <input type="password" placeholder="Password" required />
+            <div class="remember-forget">
+            <label for="rememberMe"><input type="checkbox" class="remember" value="lsRememberMe" id="rememberMe"> Remember me</label>
+            <a href="#" class="forgot">Forgot Password?</a>
+          </div>
+				    <button>SIGN IN</button>
+          </form>
+          
+        </div>
+      </div>
+      <div class="intros-container">
+        <div class="intro-control signin-intro">
+          <div class="intro-control__inner">
+            <h1>No account yet?</h1>
+            <p>
+              New here? Create an account to unlock endless possibilities. Join our community and start your exciting journey today!
+            </p>
+            <button id="signup-btn">SIGN UP</button>
+          </div>
+        </div>
+        <div class="intro-control signup-intro">
+          <div class="intro-control__inner">
+            <h1>Already have an account? </h1>
+            <p>
+              Welcome back! Log in to continue your journey with us. Your next big achievement is just a click away. Let's make it happen together!
+            </p>
+            <button id="signin-btn">LOGIN</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script>
+    const signupBtn = document.getElementById("signup-btn");
+    const signinBtn = document.getElementById("signin-btn");
+    const mainContainer = document.querySelector(".container");
+    const body = document.querySelector('body');
+    
+    signupBtn.addEventListener("click", () => {
+      mainContainer.classList.toggle("change");
+      body.classList.toggle("active");
+    });
+
+    signinBtn.addEventListener("click", () => {
+      mainContainer.classList.toggle("change");
+      body.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>
