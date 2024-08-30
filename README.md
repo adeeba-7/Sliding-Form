@@ -1,3 +1,6 @@
+Live Preview
+https://adeeba-7.github.io/Sliding-Form/
+
 Project Description for GitHub
 
 1. Sign-Up and Sign-In Form with Transition Effects
